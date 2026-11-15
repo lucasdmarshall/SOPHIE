@@ -1,0 +1,15 @@
+node_modules/
+dist/
+public/wasm/
+src-tauri/target/
+src-tauri/gen/schemas/
+src-tauri/icons/android/
+src-tauri/icons/ios/
+src-tauri/icons/icon.icns
+.idea/
+.vscode/
+*.log
+
+# Local-only notes and tool config
+.claude/
+SOPHIE-Claude-Handoff.txt

@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Main preview window",
+  "windows": ["main", "dwell", "holo"],
+  "permissions": ["core:default"]
+}

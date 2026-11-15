@@ -1,0 +1,32 @@
+{
+  "name": "sophie",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "predev": "npm run prepare:assets",
+    "dev": "vite",
+    "prebuild": "npm run prepare:assets",
+    "build": "tsc && vite build",
+    "app:dev": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/tauri-windows.ps1 dev",
+    "app:check": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/tauri-windows.ps1 check",
+    "app:test": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/tauri-windows.ps1 test",
+    "app:build": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/tauri-windows.ps1 build",
+    "tauri": "tauri",
+    "prepare:assets": "node scripts/prepare-assets.mjs",
+    "setup": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/setup.ps1"
+  },
+  "dependencies": {
+    "@fontsource/plus-jakarta-sans": "^5.2.7",
+    "@fontsource/poppins": "^5.2.7",
+    "@mediapipe/tasks-vision": "^0.10.32",
+    "@tauri-apps/api": "^2.0.0",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0",
+    "@types/three": "^0.170.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  }
+}
